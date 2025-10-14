@@ -26,7 +26,7 @@
 %----------------------------------------------------------------------------------------
 
 % article class because we want to fully customize the page and not use a cv template
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,10pt]{article}
 
 %----------------------------------------------------------------------------------------
 %	FONT
@@ -79,7 +79,7 @@
 %CV Sections inspired by: 
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{10pt}{10pt}
+\titlespacing{\section}{0pt}{11pt}{10pt}
 
 %for publications
 \usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
@@ -129,7 +129,7 @@
 \begin{document}
 
 % non-numbered pages
-\pagestyle{empty} 
+\pagestyle{empty}
 
 %----------------------------------------------------------------------------------------
 %	TITLE
@@ -142,76 +142,102 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Your Name} \\[7.5pt]
-\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/username}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
-\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
-\end{tabularx}
-
-%----------------------------------------------------------------------------------------
-% EXPERIENCE SECTIONS
-%----------------------------------------------------------------------------------------
-
-%Interests/ Keywords/ Summary
-\section{Summary}
-This CV can also be automatically complied and published using GitHub Actions. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
-
-%Experience
-\section{Work Experience}
-
-\begin{jobshort}{Designation}{Jan 2021 - present}
-long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
-\end{jobshort}
-
-
-\begin{joblong}{Designation}{Mar 2019 - Jan 2021}
-\item long long line of blah blah that will wrap when the table fills the column width
-\item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
-\end{joblong}
-  
-%Projects
-\section{Projects}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
+    \Huge{Manik Aggarwal}                                                    \\[7.5pt]
+    \href{https://manik.uk/}{\raisebox{-0.05\height}\faGlobe \ manik.uk} \ $|$ \
+    \href{https://www.linkedin.com/in/manikaggarwal1/}{\raisebox{-0.05\height}\faLinkedin\ manikaggarwal1} \ $|$ \
+    \href{mailto:contact@manik.uk}{\raisebox{-0.05\height}\faEnvelope \ contact@manik.uk} \ $|$ \
+    \href{https://github.com/mxagg}{\raisebox{-0.05\height}\faGithub\ mxagg} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+    2021--2025 & Integrated Master's in Computer Science at \textbf{King's College London} \hfill \normalsize (1st Class Honours)                    \\
+               & \small Dissertation: \href{https://manik.uk/files/dissertation.pdf}{[Public Health Insights through Graph Theory and Search Games]} \\
+\end{tabularx}
 
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
 
-2022 & Class 12th Some Board \hfill  (Grades) \\
+%Experience
+\section{Work Experience}
 
-2021 & Class 10th Some Board \hfill  (Grades) \\
+\begin{joblong}{Backend Software Engineer - Canonical}{June 2025 - Present}
+    \item Joined Canonical as a full-time Backend Software Engineer, working on the commercial systems team.
+    \item Developing and maintaining backend services using Go and Python with resilient Temporal workflows, ensuring high performance and scalability.
+    \item Implemented new CI/CD pipelines with GitHub Actions for automated testing and deployment.
+    \item Collaborating with cross-functional teams to design and implement new features, improving system reliability and user experience.
+\end{joblong}
+
+\begin{joblong}{Full-Stack Software Engineer Intern - Verisk Analytics}{June 2024 - August 2024}
+    \item Built interactive chart configuration feature in Wagtail (Django) CMS, enabling analysts to preview and embed data visualizations in insights.
+    \item Designed REST APIs handling large data volumes; serialized configurations for Angular frontend to render live graphs.
+    \item Upgraded legacy codebase to latest version, reducing platform load times by 60\%.
+    \item Collaborated with stakeholders to align features with business requirements.
+\end{joblong}
+
+
+\begin{joblong}{DevOps Engineer Intern - Hewlett Packard}{April 2023 - September 2023}
+    \item Developed browser-based KVM viewer with Cloudflare and Azure AD authentication; optimized system resources via systemd and VNC.
+    \item Automated infrastructure provisioning using Terraform and Perl scripts.
+    \item Built web server with Perl/Mojolicious backend to streamline PDU management workflows.
+\end{joblong}
+
+%Projects
+\section{Projects}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{AWS Impact Accelerator Program} & \hfill October 2024--March 2025 \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+            \item Developed a storybook management mobile app for Staffordshire Council, reducing manual paperwork by 85\%.
+            \item Written in React Native with Expo, using AWS S3 for storage and AWS Cognito for authentication.
+            \item Deployed a Python OpenAPI Docker container to EC2 using ECR for scalable services.
+        \end{itemize}
+    \end{minipage}
+    }                                                                         \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{Contract Negotiation Automation Tool (Ashurst)} & \hfill February 2024 \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+            \item Built system to automate contract draft comparison using OpenAI APIs for change detection and summarization.
+            \item Developed Next.js frontend and Go/Gin backend generating blackline PDF comparisons stored in AWS S3.
+            \item Delivered MVP improving per contract review cycle from 2 weeks to 3 days (average).
+        \end{itemize}
+    \end{minipage}
+    }                                                                              \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{Health Hub} & \hfill November--March 2023 \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+            \item Built cross-platform wellness app with React Native frontend and Node.js/Express backend.
+            \item Integrated Supabase for authentication and data storage; designed UI with TypeScript and Tailwind CSS.
+        \end{itemize}
+    \end{minipage}
+    }                                                 \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
-\section{Publications}
-\begin{refsection}[citations.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
-\section{Skills}
+\section{Professional Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
+    Languages (incl. markups) & \normalsize{Python, Go, Scala, Perl, Bash, C++, Java, JavaScript/Typescript, Rust, SQL, Haskell}                                                                                                                                                  \\
+    Libraries and Tools       & \normalsize{React Native, Django, React, Git/Github, PostgreSQL, Terraform, Cloudflare, Mojolicious, IntelliJ, Arduinos, MS Office, Unix, PyCharm, Android Studio, VSCode, Gin, REST API}                                                         \\
+    Extracurricular           & \normalsize{Active member of AI and cybersecurity societies; Hackathon participant (ICHack2024, EasyAmmutable); Community work at Oxfam with inventory automation; Skilled badminton player; Keen cyclist and runner; DIY electronics enthusiast} \\
 \end{tabularx}
-
-\vfill
-\center{\footnotesize Last updated: \today}
 
 \end{document}
