@@ -166,24 +166,23 @@
 \section{Work Experience}
 
 \begin{joblong}{Backend Software Engineer - Canonical}{June 2025 - Present}
-    \item Joined Canonical as a full-time Backend Software Engineer, working on the commercial systems team.
-    \item Developing and maintaining backend services using Go and Python with resilient Temporal workflows, ensuring high performance and scalability.
-    \item Implemented new CI/CD pipelines with GitHub Actions for automated testing and deployment.
-    \item Collaborating with cross-functional teams to design and implement new features, improving system reliability and user experience.
+    \item Designed and delivered a division-wide workflows repository in Go, now used as a template by multiple teams and hosting all workflows for the platform.
+    \item Replaced minute-loop polling with resilient \textbf{Temporal} parent/child workflows and retry policies, handling hundreds of syncs daily with fewer transient failures and manual interventions.
+    \item Migrated CI/CD from Jenkins to \textbf{GitHub Actions} across 3--4 repositories, reducing build-publish-refresh time from \textbf{90 to 15 minutes} (\textbf{86\%}) and speeding up engineering iteration.
+    \item Built \textbf{gRPC APIs} for complex legacy pricing and edge-case business logic; authored an ADR for Temporal adoption and delivered Juju, network routing, proxy configuration, private registry and SSDLC guardrails.
 \end{joblong}
 
 \begin{joblong}{Full-Stack Software Engineer Intern - Verisk Analytics}{June 2024 - August 2024}
-    \item Built interactive chart configuration feature in Wagtail (Django) CMS, enabling analysts to preview and embed data visualizations in insights.
+    \item Built interactive chart configuration in Wagtail (Django) CMS, enabling analysts to preview and embed visualisations in reports (adopted by ~10 analysts with positive feedback).
     \item Designed REST APIs handling large data volumes; serialized configurations for Angular frontend to render live graphs.
-    \item Upgraded legacy codebase to latest version, reducing platform load times by 60\%.
-    \item Collaborated with stakeholders to align features with business requirements.
+    \item Upgraded legacy codebase (Angular) to latest version, reducing platform load times by \textbf{65\%}.
 \end{joblong}
 
 
 \begin{joblong}{DevOps Engineer Intern - Hewlett Packard}{April 2023 - September 2023}
-    \item Developed browser-based KVM viewer with Cloudflare and Azure AD authentication; optimized system resources via systemd and VNC.
+    \item Built browser-based KVM viewer with Cloudflare and Azure AD authentication, reducing VM provisioning time to engineers by \textbf{92\%} and eliminating a major manual pain point.
     \item Automated infrastructure provisioning using Terraform and Perl scripts.
-    \item Built web server with Perl/Mojolicious backend to streamline PDU management workflows.
+    \item Developed Perl/Mojolicious web server to streamline PDU management workflows.
 \end{joblong}
 
 %Projects
@@ -193,9 +192,9 @@
     \multicolumn{2}{@{}X@{}}{
     \begin{minipage}[t]{\linewidth}
         \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
-            \item Developed a storybook management mobile app for Staffordshire Council, reducing manual paperwork by 85\%.
-            \item Written in React Native with Expo, using AWS S3 for storage and AWS Cognito for authentication.
-            \item Deployed a Python OpenAPI Docker container to EC2 using ECR for scalable services.
+            \item Developed a storybook management mobile app for Staffordshire Council, reducing manual paperwork by \textbf{85\%}.
+            \item Built with React Native (Expo), AWS S3 and Cognito to simplify field use and improve day-to-day workflow speed.
+            \item Deployed Python OpenAPI services as Docker containers to EC2 via ECR.
         \end{itemize}
     \end{minipage}
     }                                                                         \\
@@ -208,22 +207,10 @@
         \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
             \item Built system to automate contract draft comparison using OpenAI APIs for change detection and summarization.
             \item Developed Next.js frontend and Go/Gin backend generating blackline PDF comparisons stored in AWS S3.
-            \item Delivered MVP improving per contract review cycle from 2 weeks to 3 days (average).
+            \item Delivered MVP improving per-contract review cycle from \textbf{2 weeks to 3 days} across \textbf{20--30} review cycles.
         \end{itemize}
     \end{minipage}
     }                                                                              \\
-\end{tabularx}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{Health Hub} & \hfill November--March 2023 \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{
-    \begin{minipage}[t]{\linewidth}
-        \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
-            \item Built cross-platform wellness app with React Native frontend and Node.js/Express backend.
-            \item Integrated Supabase for authentication and data storage; designed UI with TypeScript and Tailwind CSS.
-        \end{itemize}
-    \end{minipage}
-    }                                                 \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -235,9 +222,9 @@
 %----------------------------------------------------------------------------------------
 \section{Professional Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-    Languages (incl. markups) & \normalsize{Python, Go, Scala, Perl, Bash, C++, Java, JavaScript/Typescript, Rust, SQL, Haskell}                                                                                                                                                  \\
-    Libraries and Tools       & \normalsize{React Native, Django, React, Git/Github, PostgreSQL, Terraform, Cloudflare, Mojolicious, IntelliJ, Arduinos, MS Office, Unix, PyCharm, Android Studio, VSCode, Gin, REST API}                                                         \\
-    Extracurricular           & \normalsize{Active member of AI and cybersecurity societies; Hackathon participant (ICHack2024, EasyAmmutable); Community work at Oxfam with inventory automation; Skilled badminton player; Keen cyclist and runner; DIY electronics enthusiast} \\
+    Languages      & \normalsize{Go, Python, Scala, Perl, Bash, C++, Java, JavaScript/TypeScript, Rust, SQL, Haskell}           \\
+    Frameworks     & \normalsize{Temporal, gRPC, Gin, Django, React, React Native, Mojolicious, Node.js}                        \\
+    Infrastructure & \normalsize{GitHub Actions, Docker, Terraform, PostgreSQL, AWS (S3, EC2, Cognito, ECR), Cloudflare, Linux} \\
 \end{tabularx}
 
 \end{document}

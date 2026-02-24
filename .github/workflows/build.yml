@@ -1,11 +1,23 @@
 name: deploy-cv
-on: [push]
+on:
+  push:
+    branches-ignore:
+      - build
+
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Compile LaTeX to PDF
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: manik_aggarwal_resume.tex
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
       - name: Prepare deployment directory
         run: |
           mkdir -p github_deploy
